@@ -1,13 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vite + React + TS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="src/styles/style.css"/>
 </head>
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.js"></script>
+    <header>
+        <h1>Habit Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#habits">My Habits</a></li>
+                <li><a href="#stats">Statistics</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <article class="habit-summary">
+            <header>
+                <h2>Daily Habits</h2>
+                    <div class="habit-container">
+                        <div class="habit-card">
+                            <div class="habit-icon">🎯</div>
+                            <h3>Daily Goals</h3>
+                            <p class="habit-streak">7 day streak</p>
+                            <div class="habit-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 70%"></div>
+                                </div>
+                                <span class="progress-text">70% complete</span>
+                            </div>
+                    </div>
+        
+                    <div class="habit-card featured">
+                        <div class="habit-icon">💪</div>
+                        <h3>Exercise</h3>
+                        <p class="habit-streak">14 day streak</p>
+                        <div class="habit-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%"></div>
+                            </div>
+                            <span class="progress-text">100% complete</span>
+                        </div>
+                    </div>
+                
+                    <div class="habit-card">
+                        <div class="habit-icon">📖</div>
+                        <h3>Reading</h3>
+                        <p class="habit-streak">3 day streak</p>
+                        <div class="habit-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%"></div>
+                            </div>
+                            <span class="progress-text">45% complete</span>
+                        </div>
+                    </div>
+                    </div>
+            <footer>
+                <button>Mark Complete</button>
+                <button>View Details</button>
+            </footer>
+        </article>
+        
+        <form id="habit-form">
+            <h2>Habit Form</h2>
+            <input type="text" id="habit-name" placeholder="Habit name" required />
+            <select id="habit-frequency">
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+            </select>
+            <button type="submit">Add Habit</button>
+        </form>
+    
+        <aside>
+            <h3>Quick Stats</h3>
+            <dl>
+                <dt>Total Habits</dt>
+                <dd>5</dd>
+                <dt>Longest Streak</dt>
+                <dd>30 days</dd>
+            </dl>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Habit Tracker App</p>
+    </footer>
 </body>
 </html>

@@ -22,52 +22,15 @@
         <article class="habit-summary">
             <header>
                 <h2>Daily Habits</h2>
-                    <div class="habit-container">
-                        <div class="habit-card">
-                            <div class="habit-icon">🎯</div>
-                            <h3>Daily Goals</h3>
-                            <p class="habit-streak">7 day streak</p>
-                            <div class="habit-progress">
-                                <div class="progress-bar">
-                                    <div class="progress-fill" style="width: 70%"></div>
-                                </div>
-                                <span class="progress-text">70% complete</span>
-                            </div>
-                    </div>
-        
-                    <div class="habit-card featured">
-                        <div class="habit-icon">💪</div>
-                        <h3>Exercise</h3>
-                        <p class="habit-streak">14 day streak</p>
-                        <div class="habit-progress">
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 100%"></div>
-                            </div>
-                            <span class="progress-text">100% complete</span>
-                        </div>
-                    </div>
-                
-                    <div class="habit-card">
-                        <div class="habit-icon">📖</div>
-                        <h3>Reading</h3>
-                        <p class="habit-streak">3 day streak</p>
-                        <div class="habit-progress">
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 45%"></div>
-                            </div>
-                            <span class="progress-text">45% complete</span>
-                        </div>
-                    </div>
-                    </div>
-            <footer>
-                <button>Mark Complete</button>
-                <button>View Details</button>
-            </footer>
+                <div class="habit-container">
+                    <!-- Habit cards will be dynamically generated here by JavaScript -->
+                </div>
+            </header>
         </article>
         
         <form id="habit-form">
-            <h2>Habit Form</h2>
-            <input type="text" id="habit-name" placeholder="Habit name" required />
+            <h2>Add New Habit</h2>
+            <input type="text" id="habit-name" placeholder="Enter habit name" required />
             <select id="habit-frequency">
                 <option value="daily">Daily</option>
                 <option value="weekly">Weekly</option>
@@ -79,9 +42,9 @@
             <h3>Quick Stats</h3>
             <dl>
                 <dt>Total Habits</dt>
-                <dd>5</dd>
+                <dd>0</dd>
                 <dt>Longest Streak</dt>
-                <dd>30 days</dd>
+                <dd>0 days</dd>
             </dl>
         </aside>
     </main>
@@ -89,5 +52,8 @@
     <footer>
         <p>&copy; 2024 Habit Tracker App</p>
     </footer>
+
+    <!-- Add your JavaScript file -->
+    <script src="src/scripts/habit-tracker.js"></script>
 </body>
 </html>
